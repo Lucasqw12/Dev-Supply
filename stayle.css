@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+body {
+    padding-top: 0%;
+}
+
+/*mapeia com os nomes ao inves de colocar em linhas ou colunas*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'contato'
+    'footer';
+  background-color: white;
+  gap: 10px;  
+}
+
+/* Conectando as áreas do Grid com as classes */
+.container-principal {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.contato {
+    grid-area: contato;
+}
+
+.footer-principal {
+    grid-area: footer;
+}
+
+
+.container-fluid {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-imagem {
+    width: 4%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    margin-left: 40%;
+}
+
+.gradient {
+    background-image: linear-gradient(90deg, #008cff 0%, #6c91f8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar-expand-lg {
+    background-color: rgb(211, 223, 250);
+}
+
+.navbar-nav .nav-link:hover {
+    background-image: linear-gradient(90deg, #008cff 0%, #2d61f0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.6s ease;
+}
+
+
+
+/* estilização hero */
+.texto-gradiente {
+    background-image: linear-gradient(90deg, #008cff 0%, #6c91f8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-section {
+    background-color: #0f172a;
+    padding: 290px 40px;
+    color: #ffffff;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.hero-titulo {
+    font-size: 2.2rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero-descricao {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.hero-botao {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-botao:hover {
+    background-color: #042a92;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* estilização dos cards produtos */
+.titulo-produto {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #008cff 0%, #6c91f8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 40px;
+}
+
+.cards {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-title {
+    display: flex;
+}
+
+.preco {
+    color: rgb(47, 143, 51);
+}
+
+.card-img-top {
+    height: 40%;
+}
+
+.card-body .btn {
+    margin-bottom: 5%;
+    display: flex;
+}
+
+
+/* Estilização formulario */
+.contato {
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.formulario {
+    border: solid 1px black;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f5f8fd;
+    padding: 40px;
+}
+
+.formulario .form-control {
+    width: 100%;
+}
+
+.formulario textarea.form-control {
+    margin-bottom: 5%;
+}
+
+.titulo-formulario {
+    margin-bottom: 20px;
+    background-image: linear-gradient(90deg, #008cff 0%, #6c91f8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.botao {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: #042a92;
+    color: white;
+}
+
+
+/* estilização Rodape */
+.footer-principal {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo .logo span {
+    color: #38bdf8;
+}
+
+.footer-logo p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #94a3b8;
+    font-size: 1.2rem;
+    margin-right: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #38bdf8;
+}
+
+.footer-sobre {
+    color: #f8fafc;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-sobre ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-sobre ul li {
+    margin-bottom: 10px;
+}
+
+.footer-sobre ul li a,
+.footer-sobre ul li span {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-sobre ul li a:hover {
+    color: #38bdf8;
+    padding-left: 4px;
+}
+
+.footer-contato {
+    color: #f8fafc;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contato ul li a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Responsividade Hero */
+@media (min-width: 768px) {
+    .hero-container {
+        flex-direction: row;
+    }
+
+    .hero-conteudo,
+    .hero-imagem {
+        flex: 1;
+    }
+
+    .hero-titulo {
+        font-size: 2.8rem;
+    }
+}
